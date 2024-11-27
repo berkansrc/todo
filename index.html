@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Uygulaması</title>
+    <link rel="stylesheet" href="./assest/css/style.css">
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <h1>Todo Uygulaması</h1>
+        <form id="todo-form" action="javascript:void(0)">
+            <input type="text" id="task-name" placeholder="Görev ismi" required>
+            <input type="date" id="due-date" required>
+            <button type="submit">Ekle</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Todo ara..." > 
+        </div>
+
+        <table id="todo-table">
+            <thead>
+                <tr>
+                    <th>Görev</th>
+                    <th>Son Tarih</th>
+                    <th>Durum</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody id="todo-table-body">
+                 
+            </tbody>
+        </table>
+    </div>
+
+    <div id="update-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Görevi Güncelle</h2>
+            <form id="update-form">
+                <input type="text" id="update-task-name" placeholder="Görev ismi" required>
+                <input type="date" id="update-due-date" required>
+                <button type="submit">Güncelle</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assest/js/app.js"></script>
+</body>
+
+</html>
