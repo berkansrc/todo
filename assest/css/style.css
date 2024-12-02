@@ -11,16 +11,52 @@ body {
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.flex{
+
+.flex {
 	display: flex;
 	gap: 15px;
 }
 
-.completed{
+.completed {
 	text-decoration: line-through;
 }
+
+.alert {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: none;
+	/* Başlangıçta gizli */
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	width: 80%;
+	max-width: 400px;
+}
+
+.alert.success {
+	background-color: #4CAF50;
+	/* Yeşil */
+	color: white;
+}
+
+.alert.error {
+	background-color: #f44336;
+	/* Kırmızı */
+	color: white;
+}
+
+.alert.info {
+	background-color: #2196F3;
+	/* Mavi */
+	color: white;
+}
+
 h1 {
 	text-align: center;
 	color: #333;
@@ -32,7 +68,8 @@ form {
 	margin-bottom: 20px;
 }
 
-input[type="text"], input[type="date"] {
+input[type="text"],
+input[type="date"] {
 	flex: 1;
 	padding: 8px;
 	border: 1px solid #ddd;
@@ -57,7 +94,8 @@ table {
 	border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
 	padding: 12px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
@@ -67,7 +105,8 @@ th {
 	background-color: #f2f2f2;
 }
 
-.update-btn, .delete-btn {
+.update-btn,
+.delete-btn {
 	padding: 6px 10px;
 	margin-right: 5px;
 }
@@ -88,7 +127,7 @@ th {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -118,28 +157,28 @@ th {
 
 /* Arama container'ı için stil */
 .search-container {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	gap: 10px;
 }
 
 #search-input {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+	flex: 1;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
 }
 
 #search-btn {
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #2196F3;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 #search-btn:hover {
-    background-color: #1976D2;
+	background-color: #1976D2;
 }

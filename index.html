@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./assest/css/style.css">
 </head>
 
-<body> 
+<body>
     <div class="container">
         <h1>Todo Uygulaması</h1>
+
+        <div id="alert-message" class="alert"></div>
+
         <form id="todo-form">
             <input type="text" id="task-name" placeholder="Görev ismi" required>
             <input type="date" id="due-date" required>
-            <button  id="btn">Ekle</button>
+            <button id="btn">Ekle</button>
         </form>
 
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Todo ara..." > 
+            <input type="text" id="search-input" placeholder="Todo ara...">
         </div>
 
         <table id="todo-table">
@@ -31,14 +34,14 @@
                 </tr>
             </thead>
             <tbody id="todo-table-body">
-                 
+
             </tbody>
         </table>
     </div>
 
     <div id="update-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="close-update-modal">&times;</span>
             <h2>Görevi Güncelle</h2>
             <form id="update-form">
                 <input type="text" id="update-task-name" placeholder="Görev ismi" required>
